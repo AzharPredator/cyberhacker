@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>Healthcare </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+
+    <style>
+
+      .top_image{
+        background-image: url(./image/image4);
+        width: 100%;
+        height: 1300px;
+
+      }
+
+      .btn-xl {
+
+        padding: 10px 20px;
+        font-size: 20px;
+        border-radius: 10px;
+      }
+   
+      .head_botten{
+        padding: 20px 60px;
+       margin-left: 70px;
+       margin-top: 30px;
+       
+
+      }
+
+      .logo{
+        
+        margin: 20px;
+        margin-left: 1500px;
+      }
+      .second _side {
+        margin: 20px;
+      }
+
+      .bottem_text{
+        margin-left: 1500px;
+        font-size: 70px;
+      }
+
+      .first_let{
+        margin-left: 800px;
+        font-family: Georgia, serif;
+        font-size: 70px;
+      }
+
+      .second_let{
+        margin-left: 800px;
+        font-family: Georgia, serif;
+        font-size: 70px;
+      }
+
+      .threed_let{
+        margin-left: 800px;
+        font-family: Georgia, serif;
+        font-size: 70px;
+      }
+
+      .fourth_let{
+        margin-left: 800px;
+        font-family: Georgia, serif;
+        font-size: 70px;
+      }
+      .link_1{
+        margin-left: 20px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size: 30px;
+      }
+
+      .sec_sec_link{
+        background-color: rgb(200, 251, 253);
+      }
+
+      .threed_image{
+        margin-left: 70%;
+
+      }
+
+      .threed_link_text{
+        margin-left: 0%;
+      }
+
+      .threed_link{
+        background-color: rgb(219, 232, 255);
+      }
+
+      *{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background-color: whitesmoke;
+    display: flex;
+}
+
+.section_1{
+    width: 70%;
+    height: 100vh;
+    /*background-color: red ;*/
+    
+
+}
+
+.header{
+    width: 100%;
+    height: 150px;
+    /*background-color: yellow;*/
+    display: flex;
+    align-items: center;
+    font-size: 80px;
+    font-family: Segoe UI;
+    font-weight: bold;
+    padding-left: 50px;
+    color: rgb(253, 9, 9)
+    
+    ;
+}
+
+.audios{
+    width: 100%;
+    height: 800px;
+   /* background-color: grey;*/
+    padding: 50px;
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    overflow-y: scroll;
+    column-gap: calc(4%/3);
+    row-gap: 20px;
+}
+
+.audio{
+    
+    height: auto;
+    min-height: 470px;
+    width: 24%;
+   background-color: rgb(96, 204, 223);
+   border-radius: 10px;
+   overflow: hidden;
+   
+}
+
+.audio_img{
+    width: 100%;
+    height: 300px;
+  /*  background-color: yellow;*/
+    overflow: hidden;
+}
+
+.audio_img > img {
+    width: 100%;
+}
+
+.audio_detail{
+    padding: 20px;
+}
+
+.audio_title{
+    font-family: Segoe UI;
+    color: white;
+}
+
+.btn{
+    padding: 10px 50px;
+    margin-top: 20px;
+    border: 2px solid white;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 10px;
+    background-color: transparent;
+    cursor: pointer;
+    transition: .3s;
+}
+.btn:hover{
+    background-color: #fafafaa9;
+}
+
+::-webkit-scrollbar{
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: rgb(231, 208, 208);
+    border-radius: 20%;
+}
+.vv{
+            background-color: rgb(227, 212, 230);
+            width: 100%;
+            height: 700px;
+        }
+
+        .second_side{
+        }
+
+        .link_1_images{
+          margin-left: 20px;
+        }
+        .para_for_link1{
+          margin-left: 20px;
+        }
+        .lo{
+          margin-left: 20px;
+        }
+        .po{
+          margin-left: 20px;
+        }
+        .mo{
+          margin-left: 20px;
+        }
+        .last{margin-left: 30px;}
+        .living{
+         
+          width: 100%;
+        }
+        .para_for_link1{
+          font-family:Arial Narrow, sans-serif	;
+          font-size: large;
+        }
+        .logo_name{
+          
+          margin-left: 1300px;
+        }
+        .footer--contact--phone{
+          margin-left: 1400px;
+        }
+        .footer--contact--form{
+          margin-left: 1400px;
+        }
+
+        .footer--contact--social{
+          margin-left: 850px;
+        }
+        .footer--portals{
+          margin-left: 800px;
+        }
+        
+    </style>
+
+
+
+
+  </head>
+  <body>
+    <div class="top_image">
+      <br><br>
+      
+      <div class="head_botten">
+
+        <div class="butten">
+          <input type="button"  id="myhome"   value="Home" class="btn btn-primary btn-xl  ">
+          <input type="button" id="myaboutus" value="About Us" class="btn btn-primary btn-xl ">
+          <input type="button"  id="myservices" onclick = services() value="Services" class="btn btn-primary btn-xl ">
+
+          <input type="button" id="myevents" value="Events" class="btn btn-primary btn-xl ">
+          <input type="button" id="mycontact" value="Contact" class="btn btn-primary btn-xl "></div>
+
+      <div class="logo_name"><h1 style="color: rgb(196, 15, 60)" >CyberHacker</h1 ></div>    
+      <div class="lm_butt"> <img src="./image/logo1.png" alt="Logo" width="200px" height="200px" class="logo" ></div>
+     
+      <br><br>
+
+      <div class="heading">
+        <h1 style="color: red" class="first_let">Healthcare </h1>
+        <h1 class="second_let">and Providing Solutions</h1>
+        <h3 style="color: blue" class="threed_let">For a</h3>
+        <h1 style="color: red" class="fourth_let">  Healthy Life</h1>
+
+      </div>
+    </div>
+
+   
+   <div class="bottem_text">
+    <input type="button" id="mylearnmore" value="LEARN MORE" class="btn btn-success btn learn more btn-xl">
+   </div>
+   <br><br>
+  </div>
+</div></div>
+    
+    
+
+    
+  
+    
+   <hr>
+   <br><br>
+  </div>
+    
+
+   <div class="second_side">
+
+    
+    <div class="living" >
+      <a class="link_1" href="https://www.rush.edu/news/10-simple-ways-improve-your-health">Healthy Living</a>
+      <br><br>
+      <img class="link_1_images" src="/image/image5" alt="Healthy Lifestyle Beliefs vs. Behaviors" width="500px" height="300px">
+      <br><br>
+      <div class="para_for_link1">
+       <b> <p>We've all had those well-intentioned moments when we resolve to make sweeping lifestyle changes: Quit smoking. Lose 20 pounds. Join a gym and start exercising every day.</p>
+
+        <p>While we should always strive to accomplish these types of health goals, the road to better health doesn't always have to mean making huge leaps.</p>
+
+        <p>There are also many smaller steps you can take that will help improve your overall health and quality of life — and because they're things you can easily incorporate into your routine, they'll be easy to maintain for the long haul. Even if you have only a few minutes to spare, you can use that time to improve your well-being.</p>
+
+        <p>Try incorporating the following activities and strategies into your day. When these simple steps become habits, they can add up to a big positive effect on your overall health.</p></b>
+      
+      </div></div>
+      
+      <br><br>
+      <hr>
+
+      <div class="sec_sec_link">
+        <div class="lo"><h2>Health Benefit Solutions
+          introduction video</h2>
+          <div class="para_for_link1"><b> <p>Health and well-being remain crucial concerns as chronic disease levels rise globally and the world population ages. Nutritional Health Benefit Solutions help you develop successful, innovative nutritional products that address major consumers’ health and lifestyle trends. </p></b></div>
+         
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/c06dTj0v0sM?start=183" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+        
+      </div>
+
+      <div class="threed_link">
+        
+        <div class="threed_link_text">
+          <div class="po"><h2>
+            Targeted Health Solutions</h2>
+            <div class="para_for_link1"><b><p>Our Targeted Health Solutions focus on specific areas of health reflecting key consumer trends. They address heart health, gut health, eye health, brain health, immunity and mobility, which are all growing concerns, especially in the context of a growing and aging world population. </p></div></b></div>
+            
+          
+        </div>
+        <img class="threed_image" src="/image/image6" alt="Targeted Health Solutions" width="560px" height="340px">
+        
+      </div>
+      <hr>
+
+      <div class="row row-offcanvas row-offcanvas-right">
+
+        <div class="col-xs-12 col-sm-9">
+          <p class="pull-right visible-xs">
+            <button type="button" class="btn btn-primary btn-xs" data-toggle="offcanvas">Toggle nav</button>
+          </p>
+          <div class="jumbotron">
+            <div class="mo"><h1>Health Benefit Solutions</h1>
+              <p>Life's Essentials Solutions focus on specific health needs of men, women and children, at all stages of life.</p></div>
+            
+          </div>
+         
+              
+           
+        
+
+        
+        </div>
+      </div>
+
+              
+                
+
+            </header>
+            <div class="audios">
+                <div class="audio">
+                    <div class="audio_img">
+                        <img  src="./image/image7" alt="">
+                    </div>
+                    <div class="audio_detail">
+                        <h1 class="audio_title">Optimize your immunity</h1>
+                        <p><a href="https://www.houstonmethodist.org/blog/articles/2020/mar/5-ways-to-boost-your-immune-system/">Help the immune system resist infection, neutralizing infectious agents and foreign substances.</a></p>
+                     </div>
+                </div>
+
+                <div class="audio">
+                    <div class="audio_img">
+                        <img src="./image/image8" alt="">
+                    </div>
+                    <div class="audio_detail">
+                        <h1 class="audio_title">Guard your heart</h1>
+                        <p><a href="https://www.rasmussen.edu/degrees/health-sciences/blog/healthy-heart-tips/">Help maintain healthy blood flow, cholesterol and blood pressure.</a></p>
+                     </div>
+                </div>
+
+                <div class="audio">
+                    <div class="audio_img">
+                        <img src="./image/image9" alt="">
+                    </div>
+                    <div class="audio_detail">
+                        <h1 class="audio_title">Upgrade your vision</h1>
+                        <p><a href="https://versanthealth.com/blog/top-8-ways-to-improve-vision-over-50/">Support healthy eyesight across all life stages.</a></p>
+                     </div>
+                </div>
+
+                <div class="audio">
+                    <div class="audio_img">
+                        <img src="./image/image12" alt="">
+                      </div>
+                        <div class="audio_detail">
+                        <h1 class="audio_title">Empower your mind</h1>
+                        <p><a href="https://www.oprah.com/health/the-science-behind-brain-activity-enhancing-brainpower/all">Help support cognitive health, focus and relaxation.</a></p>
+                    </div>
+                  
+                    
+                </div>
+
+                <div class="audio">
+                    <div class="audio_img">
+                        <img src="./image/image11" alt="">
+                    </div>
+                    <div class="audio_detail">
+                        <h1 class="audio_title">Improve your gut health</h1>
+                        <p><a href="https://www.medicalnewstoday.com/articles/325293#exercise">Maintain a healthy gut and microbiome.</a></p>
+                     </div>
+                </div>
+
+                <div class="audio">
+                    <div class="audio_img">
+                        <img src="./image/image10.avif" alt="">
+                    </div>
+                    <div class="audio_detail">
+                        <h1 class="audio_title">Enhance your mobility</h1>
+                        <p><a href="https://healthsport.com/5-tips-for-maximizing-your-mobility/">Take care of your bones, the flexibility of your joints and the strength of your muscles.</a></p>
+                     </div>
+                </div>
+
+                <div class="audio">
+                    <div class="audio_img">
+                        <img src="./image/image13" alt="">
+                    </div>
+                    <div class="audio_detail">
+                        <h1 class="audio_title">Optimize your weight</h1>
+                        <p><a href="https://www.ecowatch.com/8-ways-to-optimize-nutrient-levels-and-lose-weight-1891165471.html">Help manage a healthy weight.</a></p>
+                     </div>
+                </div>
+
+                <div class="audio">
+                    <div class="audio_img">
+                        <img src="./image/image14.jpg" alt="">
+                    </div>
+                    <div class="audio_detail">
+                        <h1 class="audio_title">Nourish your beauty</h1>
+                        <p><a href="https://www.mindbodygreen.com/0-8355/15-natural-ways-to-maintain-beautiful-youthful-skin.html">Supporting healthy skin, hair and nails from within.</a></p>
+                     </div>
+                </div>
+
+            </div>
+
+            <br>
+            <hr><hr>
+
+            <div class="vv">
+              <div class="last"><div class="footer--inner">
+                <div class="footer--links">
+                  <div class="footer--quick-links">
+                    <span class="heading">Quick Links</span>
+                    <div class="contextual-region"><div data-contextual-id="menu:menu=quick-links:langcode=en" data-contextual-token="Y776r1Nat6LucyzN1udIiXvm1dkZIk4YaM1tgCjrhd0"></div>
+                                  
+                    <ul>
+                                            <li class="level-1" data-dropdown-id="-1">
+                                <a href="https://www.google.com/" data-drupal-link-system-path="node/31211">Career Opportunities</a>
+                              </li>
+                                        <li class="level-1" data-dropdown-id="-1">
+                                <a href="https://www.google.com/" data-drupal-link-system-path="node/16261">About Rush University System for Health</a>
+                              </li>
+                                        <li class="level-1" data-dropdown-id="-1">
+                                <a href="https://www.google.com/" data-drupal-link-system-path="news">News</a>
+                              </li>
+                                        <li class="level-1" data-dropdown-id="-1">
+                                <a href="https://www.google.com/" data-drupal-link-system-path="news">Health &amp; Wellness</a>
+                              </li>
+                                        <li class="level-1" data-dropdown-id="-1">
+                                <a href="https://www.google.com/" data-drupal-link-system-path="node/8271">Giving to Rush</a>
+                              </li>
+                                        <li class="level-1" data-dropdown-id="-1">
+                                <a href="https://www.google.com/" data-drupal-link-system-path="clinical-trials">Clinical Trials</a>
+                              </li>
+                                        <li class="level-1" data-dropdown-id="-1">
+                                <a href="https://www.google.com/" data-drupal-link-system-path="node/17056">Referring Patients</a>
+                              </li>
+                                        <li class="level-1" data-dropdown-id="-1">
+                                <a href="contact.html" data-drupal-link-system-path="node/14796">Contact Us</a>
+                              </li>
+                                        <li class="level-1" data-dropdown-id="-1">
+                                <a href="https://www.google.com/" target="_blank" class="external">Classes &amp; Events</a>
+                              </li>
+                                        <li class="level-1" data-dropdown-id="-1">
+                                <a href="/health-care-professionals" data-drupal-link-system-path="node/16316">Health Care Professionals</a>
+                              </li>
+                        </ul>
+                  
+            
+            </div>
+            
+                  </div>
+                  <div class="footer--portals">
+                    <span class="heading">Employee Portal</span>
+                    <div class="contextual-region"><div data-contextual-id="menu:menu=employee-portal:langcode=en" data-contextual-token="KJhCEqY7Wzl1LllFt6UkADcCrWjZFHl1HIDc4Cpy3kw"></div>
+                                  <ul>
+                                            <li class="level-1" data-dropdown-id="-1">
+                                <a href="https://www.google.com/" target="_blank" class="external">Rush University Medical Center Employees</a>
+                              </li>
+                                        <li class="level-1" data-dropdown-id="-1">
+                                <a href="https://www.google.com/" data-drupal-link-system-path="node/27971">Former Rush University Medical Center Employees</a>
+                              </li>
+                                        <li class="level-1" data-dropdown-id="-1">
+                                <a href="https://www.google.com/" target="_blank" class="external">Rush Oak Park Hospital Employees</a>
+                              </li>
+                                        <li class="level-1" data-dropdown-id="-1">
+                                <a href="https://www.google.com/" target="_blank" class="external">Rush Copley Employees</a>
+                              </li>
+                                        <li class="level-1" data-dropdown-id="-1">
+                                <a href="https://www.google.com/" target="_blank" class="external">Rush Copley Physicians</a>
+                              </li>
+                                        <li class="level-1" data-dropdown-id="-1">
+                                <a href="https://www.google.com/" target="_blank" class="external">Rush Copley Remote Access</a>
+                              </li>
+                        </ul>
+                  
+            
+            </div>
+            
+                  </div>
+                </div>
+                <div class="footer--contact">
+                  <div class="footer--contact--form">
+                    <span class="heading">Stay Connected</span>
+                    <a href="/newsletter/signup" class="footer--signup-btn">Subscribe to our mailing list</a>
+                  </div>
+                  <div class="footer--contact--phone">
+                        <ul>
+                <li><span>CyberHacker University Medical Center</span> <a href="tel:123-456-7890">(888) 123-4567</a></li>
+                <li><span>CyberHacker University Children’s Hospital</span> <a href="tel:123-456-7890">(888) 123-7874</a></li>
+                <li><span>CyberHacker Copley Medical Center</span> <a href="tel:123-456-7890">(930) 147-258-3690</a></li>
+                <li><span>CyberHacker University</span> <a href="tel:012-345-6789">(111) 111-1100</a></li>
+                <li><span>CyberHacker Oak Park Hospital</span> <a href="tel:234-567-8910">(007) 258-9300</a></li>
+                <li><span>CyberHacker Copley Healthplex</span> <a href="tel:123-456-7890">(003) 369-6280</a></li>
+            </ul>
+            
+                  </div>
+                  <div class="footer--contact--social">
+                    <div class="contextual-region"><div data-contextual-id="menu:menu=social-links:langcode=en" data-contextual-token="IQWtZMAD2-_5ZZfQbJiUXHMrnqBE4pYFdqFjOYr8wSw"></div>
+                                  <ul>
+                                            <li class="level-1" data-dropdown-id="-1">
+                                <a href="https://www.facebook.com/" class="icon-facebook external" target="_blank">Facebook</a>
+                              </li>
+                                        <li class="level-1" data-dropdown-id="-1">
+                                <a href="https://twitter.com/" class="icon-twitter external" target="_blank">Twitter</a>
+                              </li>
+                                        <li class="level-1" data-dropdown-id="-1">
+                                <a href="http://www.youtube.com/" class="icon-youtube external" target="_blank">YouTube</a>
+                              </li>
+                                        <li class="level-1" data-dropdown-id="-1">
+                                <a href="https://instagram.com/" class="icon-instagram external" target="_blank">Instagram</a>
+                              </li>
+                        </ul>
+                  
+            
+            </div>
+            
+                  </div>
+                </div>
+              </div>
+    
+        </div>
+
+
+          <div class="bottem_page">
+            
+
+          </div>
+    
+
+  </div></div>
+
+              
+
+  
+  
+   <br><br>
+   <hr>
+
+   <script type="text/javascript">
+    document.getElementById("myhome").onclick = function services() {
+        location.href = "/index.html";
+    };
+    document.getElementById("myaboutus").onclick = function services() {
+        location.href = "./aboutus/aboutus.html";
+    };
+    document.getElementById("myservices").onclick = function services() {
+        location.href = "./services/services.html";
+    };
+    document.getElementById("myevents").onclick = function services() {
+        location.href = "./events/events.html";
+    };
+    document.getElementById("mycontact").onclick = function services() {
+        location.href = "./contact/contact.html";
+    };
+    document.getElementById("mylearnmore").onclick = function services() {
+        location.href = "./services/services.html";
+    };
+</script>
+
+  </body>
+</html>
